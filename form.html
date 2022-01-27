@@ -1,4 +1,4 @@
-<form action="saisie.php" method="POST">
+<!-- <form action="saisie.php" method="POST"> -->
     <!-- <label >Nom : </label> 
     <input type="text" name="nom">
     <br> -->
@@ -7,7 +7,7 @@
      <input type="text" name="prenom"><br />  -->
     <!--<input type="text" name="nom"><br /> 
      -->
-    <div> Nom 1 : <input type="text" name="nom1">
+    <!-- <div> Nom 1 : <input type="text" name="nom1">
     <input type="submit" name="ok1" value="OK1"> 
 </div>   
 </form>
@@ -16,4 +16,33 @@
     <input type="submit" name="ok2" value="OK2"> 
 
     </div> 
+</form> -->
+
+<!-- Tableau pour récupérer les saisies -->
+<!-- 
+<form action="saisie.php" method="POST">
+    <div> 
+    Nom : <input type="text" name="saisie[nom]"><br /> 
+    Prénom : <input type="text" name="saisie[prenom]"><br /> 
+    <input type="submit" name="ok" value="OK"> 
+    </div>
+</form> -->
+
+<!-- Formulaire caché -->
+<!-- <form action="saisie.php" method="POST">
+    <input type="hidden" Name="nom" value= "secret" /> 
+<label>Nom : </label> 
+<input type="text" name="nom">
+<br>
+<label>Prénom : </label>
+<input type="text" name="nom"><br /> 
+<input type="submit" name="ok" value="OK"> 
+</form> -->
+
+<!-- Formulaire caché 2 -->
+<form action="saisie.php" method="POST">
+    <input type="hidden" Name="nom" value= "<?= $nom; ?>" /> 
+    <label>Prénom : </label>
+    <input type="text" name="nom"><br /> 
+    <input type="submit" name="ok" value="OK"> 
 </form>
