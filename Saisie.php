@@ -63,7 +63,7 @@ else {
     echo "couleur non selectionnée";
 }
 echo "<br>";
-//Affichage couleurs
+//Affichage langues
 if (isset($_POST['langue'])&& !empty($_POST['langue'])) { 
     echo "langue= ".$_POST['langue'];   
 } 
@@ -71,4 +71,18 @@ else {
     echo "couleur non selectionnée";
 }
 echo "<br>";
-//Affichage couleurs
+//Affichage fruits
+function fruitPref(){
+    foreach ($_POST['fruits'] as $key => $value) {
+          echo $key." = ".$value." ";
+      }  
+  };
+if (isset($_POST['fruits'])&& !empty($_POST['fruits'])) { 
+      echo "fruits: ";
+      echo "<br>";
+      fruitPref();   
+  } 
+else {
+      echo "aucun fruit selectionné";
+  }
+  echo "<br>";
